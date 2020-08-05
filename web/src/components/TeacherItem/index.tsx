@@ -11,7 +11,7 @@ function TeacherItem() {
         <img src="https://avatars3.githubusercontent.com/u/48360931?s=400&u=1a5b218c7795602b24ab06dcdd5ec23da143feeb&v=4" alt="Rogerio Filho" />
         <div>
           <strong>Rogerio Filho</strong>
-          <strong>Quimica</strong>
+          <span>Quimica</span>
         </div>
       </header>
       <p>
