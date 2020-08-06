@@ -16,13 +16,15 @@ export default class ClassesController {
     const week_day = filters.week_day as string;
     const time = filters.time as string;
 
-    if (!filters.week_day || !filters.subject || !filters.time) {
+    if (!week_day || !subject || !time) {
       return response.status(400).json({
         error: 'Missing filters to search'
       });
     }
 
-    const timeInMinutes = convertHourToMinutes(filters.time as string);
+    console.log(filters)
+
+    const timeInMinutes = convertHourToMinutes(time as string);
 
     const classes = await db('classes')
       .whereExists(function() {
@@ -37,7 +39,7 @@ export default class ClassesController {
       .join('users', 'classes.user_id', '=', 'users.id')
       .select(['classes.*', 'users.*']);
 
-    return response.json([classes]);
+    return response.json(classes);
   }
   async create (request: Request, response: Response) {
     const {
