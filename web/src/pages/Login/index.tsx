@@ -13,7 +13,7 @@ import './styles.css';
 function Login() {
   return (
     <div className="login-container">
-      <header>
+      <header id="login-header">
         <div className="logo-top-container">
           <img className="top-logo" src={logoImg} alt="Logo"/>
           <p className="logo-description">Sua plataforma de estudos online</p>
@@ -23,7 +23,7 @@ function Login() {
         <img className="logo-details-big" src={logoDetailsBig} alt="Detalhes da logo"/>
       </header>
       
-      <main>
+      <main id="login-main">
         <form>
           <div className="login-info">
             <span>Fazer login</span>

@@ -1,13 +1,13 @@
+a {
+  text-decoration: none;
+}
+
 .login-container {
   height: 100vh;
   width: 100vw;
 }
 
-a {
-  text-decoration: none;
-}
-
-header {
+#login-header {
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -15,22 +15,22 @@ header {
   background: var(--color-primary);
 }
 
-header {
+#login-header {
   display: flex;
   padding: 5rem;
 }
 
-header .logo-details, .logo-details-big {
+#login-header .logo-details, .logo-details-big {
   align-items: center;
   justify-content: center;
   position: absolute;
 }
 
-header .logo-details-big {
+#login-header .logo-details-big {
   visibility: hidden;
 }
 
-header .logo-top-container {
+#login-header .logo-top-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
@@ -42,7 +42,7 @@ header .logo-top-container {
   justify-content: center;
 }
 
-header .logo-description {
+#login-header .logo-description {
   grid-area: details;
   text-align: initial;
   max-width: 250px;
@@ -51,36 +51,36 @@ header .logo-description {
   font-size: 1.8rem;
 }
 
-header .top-logo {
+#login-header .top-logo {
   grid-area: logo;
   width: 60%;
   justify-self: center;
   position: relative;
 }
 
-main {
+#login-main {
   padding: 6rem 3.2rem 6rem;
 }
 
-main .login-info {
+#login-main .login-info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2.4rem;
   align-items: center;
 }
 
-main .login-info span {
+#login-main .login-info span {
   font-weight: 600;
   font-size: 2.5rem;
   color: #32264D;
 }
 
-main .login-info a {
+#login-main .login-info a {
   font-size: 1.2rem;
   color: var(--color-primary);
 }
 
-main .login-options {
+#login-main .login-options {
   display: flex;
   margin: 2.5rem 0;
   justify-content: space-between;
@@ -89,7 +89,7 @@ main .login-options {
   font-size: 1.3rem;
 }
 
-main .login-options input {
+#login-main .login-options input {
   height: 2.2rem;
   width: 2.2rem;
   margin-right: 10px;
@@ -97,16 +97,16 @@ main .login-options input {
   border-radius: 15px;
 }
 
-main .login-options label {
+#login-main .login-options label {
   align-items: center;
   display: flex;
 }
 
-main .login-options a {
+#login-main .login-options a {
   color: var(--color-primary);
 }
 
-main form button {
+#login-main form button {
   width: 100%;
   height: 5.6rem;
   outline: none;
@@ -120,7 +120,7 @@ main form button {
 }
 
 @media(min-width: 650px) and (max-width: 1000px) {
-  main {
+  #login-main {
     padding-right: 25%; 
     padding-left: 25%; 
   }
@@ -131,37 +131,38 @@ main form button {
     display: flex;
   }
 
-  header {
+  #login-header {
     width: 50%;
     height: 100vh;
   }
 
-  header .logo-details {
+  #login-header .logo-details {
     visibility: hidden;
   }
 
-  header .logo-details-big {
+  #login-header .logo-details-big {
     visibility: visible;
     width: 45rem;
   }
 
-  main {
+  #login-main {
     width: 50%;
-
 
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
-  main form {
+  #login-main form {
     width: 400px;
+    justify-content: center;
   }
 
-  main .login-info span {
+  #login-main .login-info span {
     font-size: 3.6rem;
   }
 
-  main .login-info a {
+  #login-main .login-info a {
     position: absolute;
     bottom: 2.4rem;
 
@@ -172,26 +173,26 @@ main form button {
     visibility: hidden;
   }
 
-  main .login-info a::before {
+  #login-main .login-info a::before {
     content: 'Cadastre-se';
     visibility: visible;
   }
 
-  main .login-info .desktop-create-account {
+  #login-main .login-info .desktop-create-account {
     font: 1.5rem Poppins;
     position: absolute;
     bottom: 4.2rem;
   }
 
-  main .login-info .desktop-create-account::after {
+  #login-main .login-info .desktop-create-account::after {
     content: "Não tem conta?";
   }
 
-  main .login-options {
+  #login-main .login-options {
     margin-bottom: 4rem;
   }
 
-  main input[type="text"] {
+  #login-main input[type="text"] {
     font-size: 2rem;
   }
 }
