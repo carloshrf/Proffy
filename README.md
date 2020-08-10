@@ -39,7 +39,7 @@ Abaixo seguem algumas amostras das telas web.
 </p>
 
 <p align="center">
-<img  src="https://github.com/carloshrf/Proffy/blob/master/interface-preview/landing-mobile.png?raw=true"  width="400"/>
+<img  src="https://github.com/carloshrf/Proffy/blob/master/interface-preview/landing-mobile.png?raw=true"  width="300"/>
 </p>
 
 <p align="center">
@@ -47,7 +47,7 @@ Abaixo seguem algumas amostras das telas web.
 </p>
 
 <p align="center">
-<img  src="https://raw.githubusercontent.com/carloshrf/Proffy/master/interface-preview/list-teachers.png?raw=true"  width="400"/>
+<img  src="https://raw.githubusercontent.com/carloshrf/Proffy/master/interface-preview/list-teachers.png?raw=true"  width="300"/>
 </p>
 
 <p align="center">
